@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes sociales</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#d8c48d;
+            color:#333;
+        }
+
+        header{
+            background-image: url(cheesahorizontal.jpg);
+            color:rgb(116, 84, 17);
+            text-align:center;
+            padding:60px 30px;
+        }
+
+        header p{
+            font-size:1.1rem;
+            opacity:.8;
+        }
+
+        .contenedor{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        .categoria{
+            margin-bottom:60px;
+        }
+
+        .categoria h2{
+            margin-bottom:30px;
+            border-left:6px solid #000000;
+            padding-left:15px;
+            font-size:2rem;
+        }
+
+        .productos{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 20px rgba(0,0,0,.1);
+            transition:.3s;
+            text-align:center;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .info{
+            padding:20px;
+        }
+
+        .info h3{
+            margin-bottom:10px;
+        }
+
+        .info p{
+            color:#666;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 20px;
+            background:#8b6b2f;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#a5833a;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Redes Sociales</h1>
+    <p>Conoce los perfiles oficiales</p>
+</header>
+
+<div class="contenedor">
+
+    <section class="categoria">
+
+        <h2>Perfiles</h2>
+
+        <div class="productos">
+
+            <!-- Instagram SWCH -->
+            <div class="card">
+                <img src="SwchIG.jpeg" alt="SWCH">
+                <div class="info">
+                    <h3>Instagram de SWCH</h3>
+                    <p>Visita el perfil oficial de SWCH.</p>
+                    <a class="btn" href="https://www.instagram.com/swch.coffee?vrfl=MTlnN2EwYXg4MXN1eA==" target="_blank">
+                        Ver Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Perfil Diddi -->
+            <div class="card">
+                <img src="ddiub.jpeg" alt="Diddi">
+                <div class="info">
+                    <h3>Perfil de Diddi</h3>
+                    <p>Accede al perfil oficial de Diddi.</p>
+                    <a class="btn" href="https://www.instagram.com/diddi" target="_blank">
+                        Ver Perfil
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>
